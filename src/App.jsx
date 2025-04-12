@@ -5,6 +5,9 @@ import './App.css'
 import Question from './components/Question'
 import Results from './components/Results'
 
+// API endpoint that works in both development and production
+const API_URL = 'https://sentence-construction-api.vercel.app/questions'
+
 function App() {
   const [questions, setQuestions] = useState([])
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0)
@@ -19,9 +22,9 @@ function App() {
     try {
       setIsLoading(true)
       setError(null)
-      const response = await fetch('http://localhost:3001/questions')
+      const response = await fetch(API_URL)
       if (!response.ok) {
-        throw new Error('Failed to fetch questions. Please make sure the JSON server is running.')
+        throw new Error('Failed to fetch questions. Please try again later.')
       }
       const data = await response.json()
       setQuestions(data)
@@ -108,8 +111,9 @@ function App() {
           Retry Loading Questions
         </button>
         <div className="mt-4 text-sm text-gray-600 text-center">
-          Make sure to run the JSON server using:<br />
-          <code className="bg-gray-100 px-2 py-1 rounded">npm run server</code>
+          {import.meta.env.PROD 
+            ? "There was an error loading the questions. Please try again later."
+            : "Make sure to run the JSON server using: npm run server"}
         </div>
       </div>
     )

@@ -10,18 +10,52 @@ An interactive web application for practicing sentence construction through fill
 - Score tracking and feedback
 - Responsive design
 
-## Setup
+## Local Development
 
 1. Clone the repository
 2. Install dependencies:
    ```bash
    npm install
    ```
-3. Start the development server:
+3. Start the JSON server:
+   ```bash
+   npm run server
+   ```
+4. In a new terminal, start the development server:
    ```bash
    npm run dev
    ```
-4. Open your browser and navigate to `http://localhost:5173`
+5. Open your browser and navigate to `http://localhost:5173`
+
+## Deployment to Vercel
+
+### Option 1: Deploy via Vercel Dashboard
+
+1. Push your code to a GitHub repository
+2. Go to [Vercel](https://vercel.com) and sign in with your GitHub account
+3. Click "New Project"
+4. Import your repository
+5. Configure the project:
+   - Framework Preset: Vite
+   - Build Command: `npm run build`
+   - Output Directory: `dist`
+6. Click "Deploy"
+
+### Option 2: Deploy via Vercel CLI
+
+1. Install Vercel CLI:
+   ```bash
+   npm install -g vercel
+   ```
+2. Login to Vercel:
+   ```bash
+   vercel login
+   ```
+3. Deploy the project:
+   ```bash
+   vercel
+   ```
+4. Follow the prompts to complete the deployment
 
 ## Technologies Used
 
@@ -29,12 +63,15 @@ An interactive web application for practicing sentence construction through fill
 - Vite
 - Tailwind CSS
 - Radix UI Components
+- JSON Server
 
 ## Project Structure
 
 - `src/components/` - React components
 - `src/App.jsx` - Main application component
 - `src/index.css` - Global styles and Tailwind configuration
+- `db.json` - Question data
+- `vercel.json` - Vercel deployment configuration
 
 ## How to Play
 
