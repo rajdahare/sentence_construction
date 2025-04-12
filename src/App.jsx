@@ -6,7 +6,7 @@ import Question from './components/Question'
 import Results from './components/Results'
 
 // API endpoint that works in both development and production
-const API_URL = 'https://sentence-construction-api.vercel.app/questions'
+const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:3001/questions'
 
 function App() {
   const [questions, setQuestions] = useState([])
