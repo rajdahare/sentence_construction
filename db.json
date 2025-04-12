@@ -1,0 +1,74 @@
+{
+  "questions": [
+    {
+      "id": 1,
+      "sentence": "The quick brown ___ jumps over the ___ dog.",
+      "options": ["fox", "lazy", "big", "small"],
+      "correctAnswers": ["fox", "lazy"],
+      "blanks": 2
+    },
+    {
+      "id": 2,
+      "sentence": "She ___ to the store to buy some ___.",
+      "options": ["went", "bread", "walked", "milk"],
+      "correctAnswers": ["went", "bread"],
+      "blanks": 2
+    },
+    {
+      "id": 3,
+      "sentence": "The ___ rises in the ___ and sets in the west.",
+      "options": ["sun", "east", "moon", "sky"],
+      "correctAnswers": ["sun", "east"],
+      "blanks": 2
+    },
+    {
+      "id": 4,
+      "sentence": "My favorite ___ is reading ___ books.",
+      "options": ["hobby", "interesting", "sport", "boring"],
+      "correctAnswers": ["hobby", "interesting"],
+      "blanks": 2
+    },
+    {
+      "id": 5,
+      "sentence": "The ___ cat caught a ___ mouse.",
+      "options": ["black", "small", "white", "big"],
+      "correctAnswers": ["black", "small"],
+      "blanks": 2
+    },
+    {
+      "id": 6,
+      "sentence": "She ___ her ___ every morning.",
+      "options": ["walks", "dog", "feeds", "cat"],
+      "correctAnswers": ["walks", "dog"],
+      "blanks": 2
+    },
+    {
+      "id": 7,
+      "sentence": "The ___ tree provides ___ shade.",
+      "options": ["tall", "cool", "old", "dark"],
+      "correctAnswers": ["tall", "cool"],
+      "blanks": 2
+    },
+    {
+      "id": 8,
+      "sentence": "He ___ his homework ___ class.",
+      "options": ["finished", "before", "started", "during"],
+      "correctAnswers": ["finished", "before"],
+      "blanks": 2
+    },
+    {
+      "id": 9,
+      "sentence": "The ___ bird built a ___ nest.",
+      "options": ["small", "cozy", "blue", "warm"],
+      "correctAnswers": ["small", "cozy"],
+      "blanks": 2
+    },
+    {
+      "id": 10,
+      "sentence": "They ___ to the beach ___ summer.",
+      "options": ["went", "last", "drove", "this"],
+      "correctAnswers": ["went", "last"],
+      "blanks": 2
+    }
+  ]
+} 
